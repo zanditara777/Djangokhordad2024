@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block bg_color %}
+#C6EBC5
+{% endblock bg_color %}
+
+{% block content %}
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form }}
+  <input type="submit" value="create">
+</form>
+{% endblock content %}
